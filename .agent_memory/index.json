@@ -1,0 +1,39 @@
+{
+    "last_updated": "2026-02-24T21:32:00Z",
+    "checkpoints": [
+        {
+            "id": "checkpoint_20260224_213200",
+            "path": ".agent_memory/checkpoints/checkpoint_20260224_213200.md",
+            "timestamp": "2026-02-24T21:32:00Z",
+            "tags": [
+                "core-implementation-done",
+                "grid-trading-active",
+                "supabase-sync-ok"
+            ]
+        },
+        {
+            "id": "checkpoint_20260224_202000",
+            "path": ".agent_memory/checkpoints/checkpoint_20260224_202000.md",
+            "timestamp": "2026-02-24T20:20:00Z",
+            "tags": [
+                "refactoring-complete",
+                "memory-automation-fixed"
+            ]
+        },
+        {
+            "id": "checkpoint_20260224_171300",
+            "path": ".agent_memory/checkpoints/checkpoint_20260224_171300.md",
+            "timestamp": "2026-02-24T17:13:00Z",
+            "tags": [
+                "phase-2-complete",
+                "github-linked",
+                "infra-ready"
+            ]
+        }
+    ],
+    "knowledge_items": [],
+    "tags": [
+        "initial-setup",
+        "base-infrastructure"
+    ]
+}

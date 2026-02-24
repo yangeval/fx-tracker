@@ -1,11 +1,25 @@
 <script lang="ts">
-	import favicon from '$lib/assets/favicon.svg';
+  import '../app.css';
+  import { onMount } from 'svelte';
+  import { fetchContracts, subscribeToContracts } from '$lib/stores/contracts';
 
-	let { children } = $props();
+  let { children } = $props();
+
+  onMount(() => {
+    fetchContracts();
+    const unsubscribe = subscribeToContracts();
+    return () => unsubscribe();
+  });
 </script>
 
-<svelte:head>
-	<link rel="icon" href={favicon} />
-</svelte:head>
+<main>
+  {@render children()}
+</main>
 
-{@render children()}
+<style>
+  main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+</style>

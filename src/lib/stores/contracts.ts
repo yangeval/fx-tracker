@@ -6,9 +6,12 @@ export interface Contract {
     user_id: string;
     platform: string;
     buy_price: number;
+    sell_price?: number;
     target_price: number;
+    grid_gap?: number;
+    next_buy_price?: number;
     quantity: number;
-    status: 'PENDING' | 'HOLDING' | 'SOLD';
+    status: 'BUY_ORDER' | 'SELL_ORDER' | 'COMPLETED';
     created_at: string;
     updated_at: string;
 }
